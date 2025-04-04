@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body>
+    <!--Eventos HTML son cosas que les suceden a los elementos HTML. JavaScript puede "reaccionar" a esos eventos.-->
+
+    <!--Pueden ser algo que hace el navegador o algo que hace el usuario
+    Ejemplos:
+    -se termino de cargar una pagina HTML
+    -Se modifico un campo de entrada HTML
+    -Se hizo clic en un boton HTML-->
+
+    <!--JavaScript permite ejecutar codigo cuando se detectan eventos.
+    HTML permite que se agreguen atributos de controlador de eventos con codigo JavaScript, a elementos HTML-->
+
+    <!--Entre comillas simples-->
+    <element event='some JavaScript'>
+
+    <!--Entre comillas dobles-->
+    <element event="some JavaScript">
+
+    <!--En el siguiente ejemplo, onclick se agrega un atributo(con codigo) a un <button>elemento-->
+        
+        <h1>Eventos</h1>
+
+        <button onclick="document.getElementById('demo').innerHTML = Date()">the time is?</button>
+
+        <p id="demo"></p>
+
+        <!--El codigo JavaScript suele tener varias lineas de longitud. Es mas habitual ver atributos de eventos que invocan funciones-->
+
+        <button onclick="displayDate()">the time is?</button>
+
+        <p id="demo1"></p>
+
+        <script src="myScript.js"></script>
+</body>
+</html>
